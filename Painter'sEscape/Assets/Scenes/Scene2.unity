@@ -147,7 +147,7 @@ Transform:
   m_GameObject: {fileID: 51917143}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1302857, y: 0.2429607, z: -0.114870995}
+  m_LocalPosition: {x: -23.8, y: 12.4, z: -0.114870995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -414,6 +414,10 @@ PrefabInstance:
       propertyPath: rightLimit
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 6087454157828697688, guid: 03cbfc436be49594480caff953fc862a, type: 3}
+      propertyPath: collectible
+      value: 
+      objectReference: {fileID: 515420404}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -480,6 +484,18 @@ PrefabInstance:
     - target: {fileID: 1310309345345733791, guid: 03cbfc436be49594480caff953fc862a, type: 3}
       propertyPath: m_Name
       value: redAIEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942773459379393476, guid: 03cbfc436be49594480caff953fc862a, type: 3}
+      propertyPath: m_Radius
+      value: 1.0450743
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942773459379393476, guid: 03cbfc436be49594480caff953fc862a, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.07698511
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942773459379393476, guid: 03cbfc436be49594480caff953fc862a, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.21133327
       objectReference: {fileID: 0}
     - target: {fileID: 9128706091810905957, guid: 03cbfc436be49594480caff953fc862a, type: 3}
       propertyPath: m_Color.b
@@ -571,6 +587,10 @@ PrefabInstance:
       propertyPath: rightLimit
       value: -4.9
       objectReference: {fileID: 0}
+    - target: {fileID: 6087454157828697688, guid: 03cbfc436be49594480caff953fc862a, type: 3}
+      propertyPath: collectible
+      value: 
+      objectReference: {fileID: 515420404}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -750,6 +770,7 @@ MonoBehaviour:
   rightLimit: 15.2
   leftLimit: 12.3
   velocity: 5
+  collectible: {fileID: 515420404}
 --- !u!1001 &1008133310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -833,11 +854,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5160800472700923879, guid: 3687a71fc9ee9e642b96cdef0183bcf2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.9
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5160800472700923879, guid: 3687a71fc9ee9e642b96cdef0183bcf2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.3
+      value: -6.5
       objectReference: {fileID: 0}
     - target: {fileID: 5160800472700923879, guid: 3687a71fc9ee9e642b96cdef0183bcf2, type: 3}
       propertyPath: m_LocalPosition.z

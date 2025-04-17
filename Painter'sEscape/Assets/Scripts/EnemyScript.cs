@@ -22,7 +22,7 @@ public class EnemyScript : MonoBehaviour
     public float rightLimit;
 
     //refrence of the color collectible script to check if the color was collected 
-    public ColorcollectibleScript color;
+    public ColorcollectibleScript collectible;
 
     //3 different enemy states 
     public enum States{idle, patrol, attack}
@@ -47,10 +47,10 @@ public class EnemyScript : MonoBehaviour
     void Update()
     {
         //The enemy attacks you if you collect the color texel
-        if(color.getColorTexelCollected() && Player == null){
+        if(collectible.getColorTexelCollected() && Player == null){
             curr_enemyState = States.patrol;
         }
-        else if (color.getColorTexelCollected() && Player != null){
+        else if (collectible.getColorTexelCollected() && Player != null){
             curr_enemyState = States.attack;
         }
         else{
